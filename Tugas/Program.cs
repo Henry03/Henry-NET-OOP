@@ -19,7 +19,7 @@ namespace tugas
 
             if (role == "Admin")
             {
-                Console.WriteLine("Pilih customer (william/surya) : ");
+                Console.WriteLine("Pilih customer (William/Surya) : ");
                 nama = Console.ReadLine();
 
                 if (nama == customer.NamaUser)
@@ -62,6 +62,10 @@ namespace tugas
                 {
                     Console.WriteLine("User tidak ditemukan");
                 }
+            }
+            else
+            {
+                Console.WriteLine("Role tidak ditemukan");
             }
         }
     }
