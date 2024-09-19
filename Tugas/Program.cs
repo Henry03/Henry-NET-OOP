@@ -1,68 +1,8 @@
 ﻿using System;
+using Tugas;
 
 namespace tugas
 {
-    public class User
-    {
-        private string nama;
-        private string role;
-        private int emoney;
-
-        public string NamaUser
-        {
-            get { return nama; }
-            set { nama = value; }
-        }
-
-        public string RoleUser
-        {
-            get { return role; }
-            set { role = value; }
-        }
-
-        public int EmoneyUser
-        {
-            get { return emoney; }
-            set { emoney = value; }
-        }
-    }
-
-    public class Customer : User
-    {
-        public Customer(string nama, string role, int emoney)
-        {
-            this.NamaUser = nama;
-            this.RoleUser = role;
-            this.EmoneyUser = emoney;
-        }
-
-        public int GetEmoney()
-        {
-            return this.EmoneyUser;
-        }
-    }
-
-    public class Admin : User
-    {
-        public Admin(string nama, string role, int emoney)
-        {
-            this.NamaUser = nama;
-            this.RoleUser = role;
-            this.EmoneyUser = emoney;
-        }
-
-        public void AddEmoney(Customer customer, int emoney)
-        {
-            customer.EmoneyUser += emoney;
-        }
-
-        public int GetEmoney(Customer customer)
-        {
-            return customer.EmoneyUser;
-        }
-
-    }
-
     public class Program
     {
         static void Main(string[] args)
